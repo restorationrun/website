@@ -4,11 +4,11 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 import datetime
 #from dotenv import load_dotenv, find_dotenv
-import json
-from google.auth.transport.requests import Request
-from google_auth_oauthlib.flow import InstalledAppFlow
-from googleapiclient.discovery import build
-from google.oauth2 import service_account
+#import json
+#from google.auth.transport.requests import Request
+#from google_auth_oauthlib.flow import InstalledAppFlow
+#from googleapiclient.discovery import build
+#from google.oauth2 import service_account
 
 # https://medium.com/@chodvadiyasaurabh/integrating-stripe-payment-gateway-with-fastapi-a-comprehensive-guide-8fe4540b5a4
 
