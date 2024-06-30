@@ -36,8 +36,9 @@ def website(request: Request):
     program_template = "index.html"
     return templates.TemplateResponse(program_template, {"request": request, "year": current_year})
 
-
+'''
 if __name__ == "__main__":
     import uvicorn
     
     uvicorn.run(app, host="0.0.0.0", port=8000)
+'''
