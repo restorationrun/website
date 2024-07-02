@@ -1,127 +1,42 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Restoration Run</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+{% extends "base.html" %}
+{% block content %}
+<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
+    <div class="content">
+        <h1>Restoration Run</h1>
+        <p class="major">A 5K through historic Palmyra New York, with all proceeds benefiting local charities.</p>
+        <p class="major">Saturday September 14<sup>th</sup> 2024 - 8:00 Start Time</p>
+        <ul class="actions stacked">
+            <li><a href="#register" class="button big wide smooth-scroll-middle">Register</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="images/banner.jpg" alt="" />
+    </div>
+</section>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
+    <div class="content">
+        <h2>Race Course</h2>
+        <p>The 5K is an out-and-back course begining at the parking lot behind the EB Grandin Building.  Runners travel south on William Street, west on Canal Street, north on Maple Avenue, then turn around at the Martin Harris Farm parking lot.</p>
+        <ul class="actions stacked">
+            <li><a href="race-course" class="button">Learn More</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="images/spotlight01.jpg" alt="" />
+    </div>
+</section>
 
-					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-						<div class="content">
-							<h1>Restoration Run</h1>
-							<p class="major">A 5K through historic Palmyra with all proceeds benefiting local charities.</p>
-							<p class="major">Saturday September 14<sup>th</sup> 2024<br/>8:00 Start Time</p>
-							<ul class="actions stacked">
-								<li><a href="#register" class="button big wide smooth-scroll-middle">Register</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/banner.jpg" alt="" />
-						</div>
-					</section>
-
-					<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-						<div class="content">
-							<h2>Race Course</h2>
-							<p>The 5K is an out-and-back course begining at the parking lot behind the EB Grandin Building.  Runners travel south on William Street, west on Canal Street, north on Maple Avenue, then turn around at the Martin Harris Farm parking lot.</p>
-							<ul class="actions stacked">
-								<li><a href="race-route" class="button">Learn More</a></li>
-							</ul>
-						</div>
-						<div class="image">
-							<img src="images/spotlight01.jpg" alt="" />
-						</div>
-					</section>
-
-				 <a name="register"></a>
-					<section class="wrapper style1 align-center">
-						<div class="inner medium">
-							<h2>Register for the Race</h2>
-							<form method="post" action="register">
-								<div class="fields">
-									<div class="field half">
-										<label for="email">Email</label>
-										<input type="email" name="email" id="email" value="" tabindex="1" />
-									</div>
-									<div class="field half">
-										<label for="password">Password (to view results)</label>
-										<input type="password" name="password" id="password" value="" tabindex="2" />
-									</div>
-								</div>
-								<div class="fields">
-									<div class="field half">
-										<label for="name">Name</label>
-										<input type="text" name="name" id="name" value="" tabindex="3" />
-									</div>
-									<div class="field half">
-										<label for="phone">Phone</label>
-										<input type="text" name="phone" id="phone" value="" tabindex="4" />
-									</div>
-								</div>
-								<div class="fields">
-									<div class="field half">
-										<label for="size">T-Shirt Size</label>
-										<select name="size" id="size" tabindex="5">
-											<option>Select One</option>
-											<option value="adult-s">Adult Small</option>
-											<option value="adult-m">Adult Medium</option>
-											<option value="adult-l">Adult Large</option>
-											<option value="adult-xl">Adult Extra Large</option>
-											<option value="adult-xxl">Adult XXL</option>
-										</select>
-									</div>
-									<div class="field half">
-										<label for="zip">Zip Code</label>
-										<input type="text" name="zip" id="zip" value="" tabindex="6" />
-									</div>
-								</div>
-								<div class="fields">
-									<div class="field">
-										<input type="checkbox" name="consent_publish" id="consent_publish" tabindex="7" />
-										<label for="consent_publish">I consent to having my name published with the race results.</label>
-									</div>
-									<div class="field">
-										<input type="checkbox" id="consent_marketing" name="consent_marketing" tabindex="8" />
-										<label for="consent_marketing">I consent to receiving marketing information about the run.</label>
-									</div>
-								</div>
-								<ul class="actions special">
-									<li><input type="submit" name="submit" id="submit" value="Register" /></li>
-								</ul>
-							</form>
-
-						</div>
-					</section>
-
-				<!-- Footer -->
-					<footer class="wrapper style1 align-center">
-						<div class="inner">
-							<p>&copy; {{year}} Restoration Run</p>
-						</div>
-					</footer>
-
-			</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
-</html>
+<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+    <div class="content">
+        <h2>What is the Restoration?</h2>
+        <p>In the New Testament, we read that Jesus Christ established His Church, “built upon the foundation of the apostles and prophets” (Ephesians 2:20). But after the death of Peter and other Apostles, the original Church, along with God's authority, was lost. In 1820, God and Jesus called a new prophet to reestablish the Church of Jesus Christ in its fulness.</p>
+        <ul class="actions stacked">
+            <li><a href="/what-is-the-restoration" class="button">Learn More</a></li>
+        </ul>
+    </div>
+    <div class="image">
+        <img src="images/spotlight02.jpg" alt="" />
+    </div>
+</section>
+{% endblock %}

@@ -1,0 +1,100 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>Restoration Run{% block title %}{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <noscript>
+        <link rel="stylesheet" href="assets/css/noscript.css" />
+    </noscript>
+</head>
+
+<body class="is-preload">
+    <div id="wrapper" class="divided">
+        {% block content %}{% endblock %}
+        <a name="register"></a>
+        <section class="wrapper style1 align-center">
+            <div class="inner medium">
+                <h2>Register for the Race</h2>
+                <form method="post" action="register">
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" value="" tabindex="1" />
+                        </div>
+                        <div class="field half">
+                            <label for="password">Password (to view results)</label>
+                            <input type="password" name="password" id="password" value="" tabindex="2" />
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" id="name" value="" tabindex="3" />
+                        </div>
+                        <div class="field half">
+                            <label for="phone">Phone</label>
+                            <input type="text" name="phone" id="phone" value="" tabindex="4" />
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="field half">
+                            <label for="size">T-Shirt Size</label>
+                            <select name="size" id="size" tabindex="5">
+                                <option>Select One</option>
+                                <option value="adult-s">Adult Small</option>
+                                <option value="adult-m">Adult Medium</option>
+                                <option value="adult-l">Adult Large</option>
+                                <option value="adult-xl">Adult Extra Large</option>
+                                <option value="adult-xxl">Adult XXL</option>
+                            </select>
+                        </div>
+                        <div class="field half">
+                            <label for="zip">Zip Code</label>
+                            <input type="text" name="zip" id="zip" value="" tabindex="6" />
+                        </div>
+                    </div>
+                    <div class="fields">
+                        <div class="field">
+                            <input type="checkbox" name="consent_publish" id="consent_publish" tabindex="7" />
+                            <label for="consent_publish">I consent to having my name published with the race
+                                results.</label>
+                        </div>
+                        <div class="field">
+                            <input type="checkbox" id="consent_marketing" name="consent_marketing" tabindex="8" />
+                            <label for="consent_marketing">I consent to receiving marketing information about the
+                                run.</label>
+                        </div>
+                    </div>
+                    <ul class="actions special">
+                        <li><input type="submit" name="submit" id="submit" value="Register" /></li>
+                    </ul>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="wrapper style1 align-center">
+            <div class="inner">
+                <p>&copy; {{year}} Restoration Run</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
